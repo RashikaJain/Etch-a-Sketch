@@ -1,19 +1,22 @@
 body {
     display: flex;
     justify-content: center;
+    min-height : 100vh  ;
     align-items: center;
-    min-height: 100vh;
     margin: 0;
     background-color: #F8F1E8;
-}
+} 
 
 .Etch-a-sketch {
+    border : 2px solid rgb(245, 213, 154) ; 
+    box-shadow: 3px 3px 2px #fad0c4;
     color: #5C4033;
-    font-size: 5em;
+    width : 40em ; 
+    text-align : center ; 
+    font-size: 4em;
     align-self: flex-start;
-    position: absolute;
-    left: 37.5%;
-    justify-self: center;
+    position : absolute ;  
+
 }
 
 #grid-container {
@@ -33,16 +36,16 @@ body {
 }
 
 .grid-items:hover {
-    /* background: linear-gradient(47deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd); */
+    background: linear-gradient(47deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
     border: 1px solid #FFD700;
     box-shadow: 0 0 10px 3px rgba(255, 215, 0, 0.6);
 }
 
 #button-control-1
 {
-    display : block ; 
+    display : inline-block ; 
     position : absolute ; 
-    bottom : 17% ; 
+    bottom : 3em  ;
 }
 
 #no-of-grids
@@ -52,19 +55,24 @@ body {
     position : absolute ; 
     top : 5em;
 }
-@media  screen and(max-width : 600px) {
+@media  screen and(max-width : 800px) {
     #button-control-1
-    {
-       position : absolute ; 
-       left : 0 ; 
-       align-self: flex-end;
+    { 
+       flex-direction: column ;
     }
     .Etch-a-sketch
     {
-        left : 35% ; 
+        position : absolute;
+        top : 2% ;
+        font-size : 15px ;
+        width : 10em ;   
+        left : 0em ;  
     }
     #no-of-grids
     {
-        align-self : center ; 
+        position : absolute ; 
+        width : 100% ; 
+        bottom : 0  ;
+        align-self : flex-end ;  
     }
-}
+} 

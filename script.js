@@ -1,6 +1,6 @@
 let gridContainer = document.querySelector("#grid-container");
 //color array for multiple colors
-let colorArr = ["sapphire blue" , "ruby red" , "teal" , "aquamarine" , "magenta" , "silver" , "red" , "orange" , "pink"] ; 
+let colorArr = ["blue" , "gold" , "teal" , "aquamarine" , "magenta" , "silver" , "red" , "orange" , "pink"] ; 
 createDiv();
 // here is default 16*16 grid box
 function createDiv() {
